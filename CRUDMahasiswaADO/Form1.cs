@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace CRUDMahasiswaADO
 {
     public partial class FormMahasiswa : Form
-      
+
     {
         private readonly SqlConnection conn;
         private readonly String connectionString =
@@ -61,7 +61,7 @@ namespace CRUDMahasiswaADO
             {
                 if (conn.State == System.Data.ConnectionState.Closed)
                 {
-                    conn.Open(); 
+                    conn.Open();
                 }
                 dataGridView1.Rows.Clear();
                 dataGridView1.Columns.Clear();
@@ -132,7 +132,36 @@ namespace CRUDMahasiswaADO
                     txtKodeProdi.Focus();
                     return;
                 }
+                string query = @"INSERT INTO Mahasiswa
+                                (NIM, Nama, JenisKelamin, TanggalLahir, Alamat, KodeProdi, TanggalDaftar)
+                                VALUES
+                                (@NIM, @Nama, @JK, @TanggalLahir, @Alamat, @KodeProdi, @TanggalDaftar)";
+                SqlCommand cmd = new SqlCommand(query, conn);
 
+                cmd.Parameters.AddWithValue("@NIM", txtNIM.Text);
+                cmd.Parameters.AddWithValue("@Nama", txtNama.Text);
+                cmd.Parameters.AddWithValue("@JK", cmbJK.Text);
+                cmd.Parameters.AddWithValue("@TanggalLahir", dtpTanggalLahir.Value.Date);
+                cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text);
+                cmd.Parameters.AddWithValue("@KodeProdi", txtKodeProdi.Text);
+                cmd.Parameters.AddWithValue("@TanggalDaftar", DateTime.Now);
+
+                int result = cmd.ExecuteNonQuery();
+
+                if (result > 0)
+                {
+                    MessageBox.Show("Data mahasiswa berhasil ditambahkan");
+                    ClearForm();
+                    btnLoad.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Data gagal ditambahkan");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi Kesalahan: " + ex.Message);
             }
         }
     }
