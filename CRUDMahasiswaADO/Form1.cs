@@ -72,7 +72,22 @@ namespace CRUDMahasiswaADO
                 dataGridView1.Columns.Add("TanggalLahir", "Tanggal Lahir");
                 dataGridView1.Columns.Add("Alamat", "Alamat");
 
+                string query = "SELECT * FROM Mahasiswa";
 
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    dataGridView1.Rows.Add(
+                        reader["NIM"].ToString(),
+                        reader["Nama"].ToString(),
+                        reader["JenisKelamin"].ToString(),
+                        Convert.ToDateTime(reader["TanggalLahir"]).ToShortDateString(),
+                        reader["Alamat"].ToString(),
+                        reader["KodeProdi"].ToString()
+                     );
+                }
             }
         }
     }
