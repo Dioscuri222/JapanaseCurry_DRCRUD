@@ -16,5 +16,10 @@ namespace CRUDMahasiswaADO
         {
             InitializeComponent();
         }
+
+        private void txtNIM_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
