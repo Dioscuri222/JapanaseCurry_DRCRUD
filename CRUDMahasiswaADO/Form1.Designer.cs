@@ -1,6 +1,6 @@
 ﻿namespace CRUDMahasiswaADO
 {
-    partial class Form1
+    partial class FormMahasiswa
     {
         /// <summary>
         /// Required designer variable.
@@ -190,7 +190,7 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FormMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -212,8 +212,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FormMahasiswa";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMahasiswa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

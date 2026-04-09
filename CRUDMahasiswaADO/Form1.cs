@@ -10,14 +10,26 @@ using System.Windows.Forms;
 
 namespace CRUDMahasiswaADO
 {
-    public partial class Form1 : Form
+    public partial class FormMahasiswa : Form
+      
     {
-        public Form1()
+        private readonly SqlConnection conn;
+        private readonly String connectionString =
+          "Data Source=FASYALTP\\FASYALTP;Initial Catalog=DBAkademikADO;Integrated Security=True";
+        public FormMahasiswa()
+
         {
+
             InitializeComponent();
+            conn = new SqlConnection(connectionString);
         }
 
         private void txtNIM_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormMahasiswa_Load(object sender, EventArgs e)
         {
 
         }
