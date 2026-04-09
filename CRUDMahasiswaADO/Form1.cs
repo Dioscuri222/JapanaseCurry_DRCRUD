@@ -54,5 +54,18 @@ namespace CRUDMahasiswaADO
                 MessageBox.Show("Koneksi Gagal: " + ex.Message);
             }
         }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (conn.State == System.Data.ConnectionState.Closed)
+                {
+                    conn.Open(); 
+                }
+                dataGridView1.Rows.Clear();
+                dataGridView1.Columns.Clear();
+            }
+        }
     }
 }
