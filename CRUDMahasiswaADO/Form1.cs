@@ -81,6 +81,7 @@ namespace CRUDMahasiswaADO
                 dataGridView1.Columns.Add("JenisKelamin", "Jenis Kelamin");
                 dataGridView1.Columns.Add("TanggalLahir", "Tanggal Lahir");
                 dataGridView1.Columns.Add("Alamat", "Alamat");
+                dataGridView1.Columns.Add("KodeProdi", "Kode Prodi");
 
                 string query = "SELECT * FROM Mahasiswa";
 
@@ -288,6 +289,11 @@ namespace CRUDMahasiswaADO
             txtKodeProdi.Clear();
             dtpTanggalLahir.Value = DateTime.Now;
             txtNIM.Focus();
+        }
+
+        private void txtKodeProdi_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
