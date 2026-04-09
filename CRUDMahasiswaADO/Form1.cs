@@ -31,7 +31,17 @@ namespace CRUDMahasiswaADO
 
         private void FormMahasiswa_Load(object sender, EventArgs e)
         {
+            cmbJK.Items.Clear();
+            cmbJK.Items.Add("L");
+            cmbJK.Items.Add("P");
 
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dataGridView1.CellClick += dataGridView1_CellContentClick;
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -235,7 +245,7 @@ namespace CRUDMahasiswaADO
 
                     int result = cmd.ExecuteNonQuery();
 
-                    if ( (result > 0)
+                    if (result > 0)
                     {
                         MessageBox.Show("Data berhasil dihapus");
                         ClearForm();
