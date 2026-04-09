@@ -42,6 +42,9 @@
             this.dtpTanggalLahir = new System.Windows.Forms.DateTimePicker();
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -102,7 +105,7 @@
             // 
             this.txtNIM.Location = new System.Drawing.Point(253, 70);
             this.txtNIM.Name = "txtNIM";
-            this.txtNIM.Size = new System.Drawing.Size(100, 22);
+            this.txtNIM.Size = new System.Drawing.Size(217, 22);
             this.txtNIM.TabIndex = 6;
             this.txtNIM.TextChanged += new System.EventHandler(this.txtNIM_TextChanged);
             // 
@@ -110,7 +113,7 @@
             // 
             this.txtNama.Location = new System.Drawing.Point(253, 114);
             this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(100, 22);
+            this.txtNama.Size = new System.Drawing.Size(217, 22);
             this.txtNama.TabIndex = 7;
             // 
             // txtAlamat
@@ -144,7 +147,7 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(512, 297);
+            this.btnConnect.Location = new System.Drawing.Point(526, 70);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 12;
@@ -153,18 +156,48 @@
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(678, 297);
+            this.btnLoad.Location = new System.Drawing.Point(526, 114);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(75, 23);
             this.btnLoad.TabIndex = 13;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
             // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(526, 160);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(75, 23);
+            this.btnCreate.TabIndex = 14;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(526, 210);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(526, 252);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 16;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.dtpTanggalLahir);
@@ -202,6 +235,9 @@
         private System.Windows.Forms.DateTimePicker dtpTanggalLahir;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
