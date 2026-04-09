@@ -65,6 +65,14 @@ namespace CRUDMahasiswaADO
                 }
                 dataGridView1.Rows.Clear();
                 dataGridView1.Columns.Clear();
+
+                dataGridView1.Columns.Add("NIM", "NIM");
+                dataGridView1.Columns.Add("Nama", "Nama");
+                dataGridView1.Columns.Add("JenisKelamin", "Jenis Kelamin");
+                dataGridView1.Columns.Add("TanggalLahir", "Tanggal Lahir");
+                dataGridView1.Columns.Add("Alamat", "Alamat");
+
+
             }
         }
     }
