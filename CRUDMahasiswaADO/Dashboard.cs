@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace CRUDMahasiswaADO
 {
@@ -26,6 +27,13 @@ namespace CRUDMahasiswaADO
             dtpTanggalMasuk.CustomFormat = "yyyy";
             dtpTanggalMasuk.ShowUpDown = true;
             dtpTanggalMasuk.MaxDate = DateTime.Now;
+
+            cmbTipe.DropDownStyle = ComboBoxStyle.DropDownList;
+            var items = new List<KeyValuePair<string, SeriesChartType>>
+            {
+                new KeyValuePair<string, SeriesChartType>("Kolom", SeriesChartType.Column),
+                new KeyValuePair<string, SeriesChartType>("Pie", SeriesChartType.Pie)
+            };
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
