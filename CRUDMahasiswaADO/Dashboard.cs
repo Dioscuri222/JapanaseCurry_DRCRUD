@@ -113,6 +113,11 @@ namespace CRUDMahasiswaADO
             }
         }
 
+        private void cmbTipe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
