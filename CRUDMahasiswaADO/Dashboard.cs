@@ -12,9 +12,19 @@ namespace CRUDMahasiswaADO
 {
     public partial class Dashboard : Form
     {
+
+        DAL dbLogic = new DAL();
+        bool isInitializing = true;
+        DataTable dt;
+        int button = 0;
         public Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

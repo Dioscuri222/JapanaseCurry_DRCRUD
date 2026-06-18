@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoad = new System.Windows.Forms.Button();
@@ -87,16 +87,16 @@
             // 
             // chartProdi
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartProdi.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartProdi.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            this.chartProdi.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartProdi.Legends.Add(legend3);
             this.chartProdi.Location = new System.Drawing.Point(37, 74);
             this.chartProdi.Name = "chartProdi";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartProdi.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartProdi.Series.Add(series3);
             this.chartProdi.Size = new System.Drawing.Size(728, 333);
             this.chartProdi.TabIndex = 5;
             this.chartProdi.Text = "chart1";
@@ -125,6 +125,7 @@
             this.Controls.Add(this.dtpTanggalMasuk);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartProdi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
