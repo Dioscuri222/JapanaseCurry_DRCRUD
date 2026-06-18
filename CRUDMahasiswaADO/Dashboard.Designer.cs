@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoad = new System.Windows.Forms.Button();
@@ -89,16 +89,16 @@
             // 
             // chartProdi
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartProdi.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartProdi.Legends.Add(legend5);
+            chartArea6.Name = "ChartArea1";
+            this.chartProdi.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartProdi.Legends.Add(legend6);
             this.chartProdi.Location = new System.Drawing.Point(37, 74);
             this.chartProdi.Name = "chartProdi";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartProdi.Series.Add(series5);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chartProdi.Series.Add(series6);
             this.chartProdi.Size = new System.Drawing.Size(728, 333);
             this.chartProdi.TabIndex = 5;
             this.chartProdi.Text = "chart1";
@@ -112,6 +112,7 @@
             this.btnDataMahasiswa.TabIndex = 6;
             this.btnDataMahasiswa.Text = "Data Mahasiswa";
             this.btnDataMahasiswa.UseVisualStyleBackColor = false;
+            this.btnDataMahasiswa.Click += new System.EventHandler(this.btnDataMahasiswa_Click);
             // 
             // Dashboard
             // 
