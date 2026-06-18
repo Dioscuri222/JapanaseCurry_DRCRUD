@@ -84,7 +84,34 @@ namespace CRUDMahasiswaADO
                     }
                     chartProdi.Series.Add(s);
                 }
+                else
+                {
+                    Series s = new Series("Jumlah Mahasiswa");
+                    s.ChartType = tipe;
+                    s.IsValueShownAsLabel = true;
+                    s.Label = "#VAL";
+                    s.LegendText = "#VALX";
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        string prodi = row["NamaProdi"].ToString();
+                        int jumlah = Convert.ToInt32(row["JmlhMhs"]);
+                        s.Points.AddXY(prodi, jumlah);
+                    }
+                    chartProdi.Series.Add(s);
+                }
+
+                Title title = new Title("Jumlah Mahasiswa per Program Studi", Docking.Top, new Font("Arial", 14, FontStyle.Bold), Color.DarkBlue);
+                chartProdi.Titles.Add(title);
+
+                Legend legend = new Legend("MainLegend");
+                legend.Docking = Docking.Right;
+                chartProdi.Legends.Add(legend);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal load data: " + ex.Message);
+            }
+        }
 
 
         private void Dashboard_Load(object sender, EventArgs e)
