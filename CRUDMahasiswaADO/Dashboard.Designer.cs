@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.cmbTipe = new System.Windows.Forms.ComboBox();
             this.chartProdi = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnDataMahasiswa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartProdi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,25 +87,36 @@
             // 
             // chartProdi
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartProdi.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartProdi.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartProdi.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartProdi.Legends.Add(legend2);
             this.chartProdi.Location = new System.Drawing.Point(37, 74);
             this.chartProdi.Name = "chartProdi";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartProdi.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartProdi.Series.Add(series2);
             this.chartProdi.Size = new System.Drawing.Size(728, 333);
             this.chartProdi.TabIndex = 5;
             this.chartProdi.Text = "chart1";
+            // 
+            // btnDataMahasiswa
+            // 
+            this.btnDataMahasiswa.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDataMahasiswa.Location = new System.Drawing.Point(644, 413);
+            this.btnDataMahasiswa.Name = "btnDataMahasiswa";
+            this.btnDataMahasiswa.Size = new System.Drawing.Size(121, 36);
+            this.btnDataMahasiswa.TabIndex = 6;
+            this.btnDataMahasiswa.Text = "Data Mahasiswa";
+            this.btnDataMahasiswa.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDataMahasiswa);
             this.Controls.Add(this.chartProdi);
             this.Controls.Add(this.cmbTipe);
             this.Controls.Add(this.btnReset);
@@ -127,5 +139,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.ComboBox cmbTipe;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartProdi;
+        private System.Windows.Forms.Button btnDataMahasiswa;
     }
 }
