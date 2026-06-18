@@ -58,7 +58,18 @@ namespace CRUDMahasiswaADO
             ca.AxisX.LabelStyle.Angle = -45;
             ca.BackColor = Color.Transparent;
             chartProdi.ChartAreas.Add(ca);
-        }
+
+            try
+            {
+                if (button == 1)
+                {
+                    dt = dbLogic.getDataChartByTahun(dtpTanggalMasuk.Value);
+                }
+                else
+                {
+                    dt = dbLogic.getAllDataChart();
+                }
+            }
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
