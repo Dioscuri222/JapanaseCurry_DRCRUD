@@ -31,7 +31,7 @@
             this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoad = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtpTanggalMasuk
@@ -60,21 +60,22 @@
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnReset
             // 
-            this.button2.Location = new System.Drawing.Point(415, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReset.BackColor = System.Drawing.Color.IndianRed;
+            this.btnReset.Location = new System.Drawing.Point(415, 43);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 3;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtpTanggalMasuk);
@@ -90,6 +91,6 @@
         private System.Windows.Forms.DateTimePicker dtpTanggalMasuk;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLoad;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReset;
     }
 }
