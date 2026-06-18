@@ -20,6 +20,12 @@ namespace CRUDMahasiswaADO
         public Dashboard()
         {
             InitializeComponent();
+
+            dtpTanggalMasuk.MinDate = new DateTime(2000, 1, 1);
+            dtpTanggalMasuk.Format = DateTimePickerFormat.Custom;
+            dtpTanggalMasuk.CustomFormat = "yyyy";
+            dtpTanggalMasuk.ShowUpDown = true;
+            dtpTanggalMasuk.MaxDate = DateTime.Now;
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
