@@ -7,44 +7,23 @@ namespace CRUDMahasiswaADO
 {
     public partial class FormReport : Form
     {
-        static string connectionString = "Data Source=FASYALTP\\FASYALTP;Initial Catalog=DBAkademikADO;Integrated Security=True";
-        SqlConnection conn;
-        SqlDataAdapter da;
-        DataTable dtMahasiswa;
+        DAL dbLogic = new DAL();
         DataMahasiswa listMahasiswa = new DataMahasiswa();
 
         string prodi { get; set; }
         DateTime tglmasuk { get; set; }
 
-        public FormReport(string prodi, DateTime tglmasuk)
+        public FormReport(string Prodi, DateTime TglMasuk)
         {
             InitializeComponent();
 
-            conn = new SqlConnection(connectionString);
-
-
-            this.prodi = prodi;
-            this.tglmasuk = tglmasuk;
+            prodi = Prodi;
+            tglmasuk = TglMasuk;
 
             try
             {
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                }
-
-                SqlCommand cmd = new SqlCommand("sp_Report", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@inProdi", this.prodi);
-
-                cmd.Parameters.AddWithValue("@inTglMsuk", this.tglmasuk.Year);
-
-                da = new SqlDataAdapter(cmd);
-                dtMahasiswa = new DataTable();
-
-                da.Fill(dtMahasiswa);
-
-                conn.Close();
+                // Ambil data report melalui DAL
+                DataTable dtMahasiswa = dbLogic.getDataRekap(prodi, tglmasuk);
 
                 listMahasiswa.SetDataSource(dtMahasiswa);
                 crystalReportViewer1.ReportSource = listMahasiswa;
@@ -52,7 +31,7 @@ namespace CRUDMahasiswaADO
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Gagal Load Data: " + ex.Message);
+                MessageBox.Show("Gagal load data: " + ex.Message);
             }
         }
 
