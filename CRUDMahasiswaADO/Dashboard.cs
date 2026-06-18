@@ -45,6 +45,11 @@ namespace CRUDMahasiswaADO
             loadDataChart();
         }
 
+        private void loadDataChart()
+        {
+
+        }
+
         private void Dashboard_Load(object sender, EventArgs e)
         {
 
