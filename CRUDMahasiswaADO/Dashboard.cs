@@ -115,7 +115,10 @@ namespace CRUDMahasiswaADO
 
         private void cmbTipe_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (isInitializing) return;
 
+            if (button == 1) { loadDataChart(); }
+            else { loadDataChart(); }
         }
 
 
