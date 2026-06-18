@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoad = new System.Windows.Forms.Button();
@@ -66,6 +66,7 @@
             this.btnLoad.TabIndex = 2;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnReset
             // 
@@ -87,16 +88,16 @@
             // 
             // chartProdi
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartProdi.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartProdi.Legends.Add(legend3);
+            chartArea4.Name = "ChartArea1";
+            this.chartProdi.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chartProdi.Legends.Add(legend4);
             this.chartProdi.Location = new System.Drawing.Point(37, 74);
             this.chartProdi.Name = "chartProdi";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartProdi.Series.Add(series3);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chartProdi.Series.Add(series4);
             this.chartProdi.Size = new System.Drawing.Size(728, 333);
             this.chartProdi.TabIndex = 5;
             this.chartProdi.Text = "chart1";
