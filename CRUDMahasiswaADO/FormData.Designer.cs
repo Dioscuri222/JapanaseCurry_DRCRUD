@@ -418,20 +418,22 @@
             // 
             // fotoMhs
             // 
-            this.fotoMhs.Location = new System.Drawing.Point(385, 174);
+            this.fotoMhs.Location = new System.Drawing.Point(437, 174);
             this.fotoMhs.Name = "fotoMhs";
             this.fotoMhs.Size = new System.Drawing.Size(94, 94);
             this.fotoMhs.TabIndex = 23;
             this.fotoMhs.TabStop = false;
+            this.fotoMhs.Click += new System.EventHandler(this.fotoMhs_Click);
             // 
             // btnUpload
             // 
-            this.btnUpload.Location = new System.Drawing.Point(376, 274);
+            this.btnUpload.Location = new System.Drawing.Point(428, 274);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(114, 23);
             this.btnUpload.TabIndex = 24;
             this.btnUpload.Text = "Upload Gambar";
             this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // btnImpExcel
             // 
@@ -441,6 +443,7 @@
             this.btnImpExcel.TabIndex = 25;
             this.btnImpExcel.Text = "Import from Excel";
             this.btnImpExcel.UseVisualStyleBackColor = true;
+            this.btnImpExcel.Click += new System.EventHandler(this.btnImpExcel_Click);
             // 
             // btnImpDb
             // 
@@ -450,6 +453,7 @@
             this.btnImpDb.TabIndex = 26;
             this.btnImpDb.Text = "Import to DB";
             this.btnImpDb.UseVisualStyleBackColor = true;
+            this.btnImpDb.Click += new System.EventHandler(this.btnImpDb_Click);
             // 
             // FormMahasiswa
             // 
