@@ -67,11 +67,16 @@
             this.btnTestInjection = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnRekap = new System.Windows.Forms.Button();
+            this.fotoMhs = new System.Windows.Forms.PictureBox();
+            this.btnUpload = new System.Windows.Forms.Button();
+            this.btnImpExcel = new System.Windows.Forms.Button();
+            this.btnImpDb = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBAkademikADODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoMhs)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -373,7 +378,7 @@
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.LightCoral;
-            this.btnReset.Location = new System.Drawing.Point(701, 62);
+            this.btnReset.Location = new System.Drawing.Point(701, 34);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(87, 23);
             this.btnReset.TabIndex = 19;
@@ -384,7 +389,7 @@
             // btnTestInjection
             // 
             this.btnTestInjection.BackColor = System.Drawing.Color.LightCyan;
-            this.btnTestInjection.Location = new System.Drawing.Point(701, 114);
+            this.btnTestInjection.Location = new System.Drawing.Point(701, 86);
             this.btnTestInjection.Name = "btnTestInjection";
             this.btnTestInjection.Size = new System.Drawing.Size(87, 23);
             this.btnTestInjection.TabIndex = 20;
@@ -403,7 +408,7 @@
             // 
             // btnRekap
             // 
-            this.btnRekap.Location = new System.Drawing.Point(713, 155);
+            this.btnRekap.Location = new System.Drawing.Point(713, 127);
             this.btnRekap.Name = "btnRekap";
             this.btnRekap.Size = new System.Drawing.Size(75, 23);
             this.btnRekap.TabIndex = 22;
@@ -411,11 +416,50 @@
             this.btnRekap.UseVisualStyleBackColor = true;
             this.btnRekap.Click += new System.EventHandler(this.button1_Click);
             // 
+            // fotoMhs
+            // 
+            this.fotoMhs.Location = new System.Drawing.Point(385, 174);
+            this.fotoMhs.Name = "fotoMhs";
+            this.fotoMhs.Size = new System.Drawing.Size(94, 94);
+            this.fotoMhs.TabIndex = 23;
+            this.fotoMhs.TabStop = false;
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.Location = new System.Drawing.Point(376, 274);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(114, 23);
+            this.btnUpload.TabIndex = 24;
+            this.btnUpload.Text = "Upload Gambar";
+            this.btnUpload.UseVisualStyleBackColor = true;
+            // 
+            // btnImpExcel
+            // 
+            this.btnImpExcel.Location = new System.Drawing.Point(701, 174);
+            this.btnImpExcel.Name = "btnImpExcel";
+            this.btnImpExcel.Size = new System.Drawing.Size(90, 55);
+            this.btnImpExcel.TabIndex = 25;
+            this.btnImpExcel.Text = "Import from Excel";
+            this.btnImpExcel.UseVisualStyleBackColor = true;
+            // 
+            // btnImpDb
+            // 
+            this.btnImpDb.Location = new System.Drawing.Point(701, 243);
+            this.btnImpDb.Name = "btnImpDb";
+            this.btnImpDb.Size = new System.Drawing.Size(90, 55);
+            this.btnImpDb.TabIndex = 26;
+            this.btnImpDb.Text = "Import to DB";
+            this.btnImpDb.UseVisualStyleBackColor = true;
+            // 
             // FormMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnImpDb);
+            this.Controls.Add(this.btnImpExcel);
+            this.Controls.Add(this.btnUpload);
+            this.Controls.Add(this.fotoMhs);
             this.Controls.Add(this.btnRekap);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnTestInjection);
@@ -448,6 +492,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoMhs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,6 +537,10 @@
         private System.Windows.Forms.Button btnTestInjection;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Button btnRekap;
+        private System.Windows.Forms.PictureBox fotoMhs;
+        private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.Button btnImpExcel;
+        private System.Windows.Forms.Button btnImpDb;
     }
 }
 
