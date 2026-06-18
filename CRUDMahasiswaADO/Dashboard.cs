@@ -34,6 +34,15 @@ namespace CRUDMahasiswaADO
                 new KeyValuePair<string, SeriesChartType>("Kolom", SeriesChartType.Column),
                 new KeyValuePair<string, SeriesChartType>("Pie", SeriesChartType.Pie)
             };
+
+            isInitializing = true;
+            cmbTipe.DataSource = items;
+            cmbTipe.DisplayMember = "Key";
+            cmbTipe.ValueMember = "Value";
+            cmbTipe.SelectedIndex = 0;
+
+            isInitializing = false;
+            loadDataChart();
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
