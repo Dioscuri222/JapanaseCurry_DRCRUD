@@ -77,7 +77,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 70);
+            this.label1.Location = new System.Drawing.Point(13, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 16);
             this.label1.TabIndex = 0;
@@ -86,7 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 114);
+            this.label2.Location = new System.Drawing.Point(13, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 1;
@@ -95,7 +95,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(108, 252);
+            this.label3.Location = new System.Drawing.Point(13, 244);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 16);
             this.label3.TabIndex = 2;
@@ -104,7 +104,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(108, 163);
+            this.label4.Location = new System.Drawing.Point(13, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 16);
             this.label4.TabIndex = 3;
@@ -113,7 +113,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(108, 210);
+            this.label5.Location = new System.Drawing.Point(13, 202);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 16);
             this.label5.TabIndex = 4;
@@ -122,7 +122,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(108, 290);
+            this.label6.Location = new System.Drawing.Point(13, 282);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 16);
             this.label6.TabIndex = 5;
@@ -131,7 +131,7 @@
             // txtNIM
             // 
             this.txtNIM.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "NIM", true));
-            this.txtNIM.Location = new System.Drawing.Point(253, 70);
+            this.txtNIM.Location = new System.Drawing.Point(158, 62);
             this.txtNIM.Name = "txtNIM";
             this.txtNIM.Size = new System.Drawing.Size(217, 22);
             this.txtNIM.TabIndex = 6;
@@ -150,7 +150,7 @@
             // txtNama
             // 
             this.txtNama.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "Nama", true));
-            this.txtNama.Location = new System.Drawing.Point(253, 114);
+            this.txtNama.Location = new System.Drawing.Point(158, 106);
             this.txtNama.Name = "txtNama";
             this.txtNama.Size = new System.Drawing.Size(217, 22);
             this.txtNama.TabIndex = 7;
@@ -158,7 +158,7 @@
             // txtAlamat
             // 
             this.txtAlamat.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "Alamat", true));
-            this.txtAlamat.Location = new System.Drawing.Point(253, 246);
+            this.txtAlamat.Location = new System.Drawing.Point(158, 238);
             this.txtAlamat.Name = "txtAlamat";
             this.txtAlamat.Size = new System.Drawing.Size(182, 22);
             this.txtAlamat.TabIndex = 8;
@@ -166,7 +166,7 @@
             // txtKodeProdi
             // 
             this.txtKodeProdi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "KodeProdi", true));
-            this.txtKodeProdi.Location = new System.Drawing.Point(253, 287);
+            this.txtKodeProdi.Location = new System.Drawing.Point(158, 279);
             this.txtKodeProdi.Name = "txtKodeProdi";
             this.txtKodeProdi.Size = new System.Drawing.Size(100, 22);
             this.txtKodeProdi.TabIndex = 9;
@@ -176,7 +176,7 @@
             // 
             this.cmbJK.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "JenisKelamin", true));
             this.cmbJK.FormattingEnabled = true;
-            this.cmbJK.Location = new System.Drawing.Point(253, 155);
+            this.cmbJK.Location = new System.Drawing.Point(158, 147);
             this.cmbJK.Name = "cmbJK";
             this.cmbJK.Size = new System.Drawing.Size(121, 24);
             this.cmbJK.TabIndex = 10;
@@ -184,14 +184,14 @@
             // dtpTanggalLahir
             // 
             this.dtpTanggalLahir.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mahasiswaBindingSource, "TanggalLahir", true));
-            this.dtpTanggalLahir.Location = new System.Drawing.Point(253, 204);
+            this.dtpTanggalLahir.Location = new System.Drawing.Point(158, 196);
             this.dtpTanggalLahir.Name = "dtpTanggalLahir";
             this.dtpTanggalLahir.Size = new System.Drawing.Size(200, 22);
             this.dtpTanggalLahir.TabIndex = 11;
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(526, 70);
+            this.btnConnect.Location = new System.Drawing.Point(592, 34);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 12;
@@ -201,7 +201,7 @@
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(526, 114);
+            this.btnLoad.Location = new System.Drawing.Point(592, 78);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(75, 23);
             this.btnLoad.TabIndex = 13;
@@ -211,7 +211,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(526, 160);
+            this.btnInsert.Location = new System.Drawing.Point(592, 124);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
             this.btnInsert.TabIndex = 14;
@@ -221,7 +221,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(526, 210);
+            this.btnUpdate.Location = new System.Drawing.Point(592, 174);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 15;
@@ -231,7 +231,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(526, 252);
+            this.btnDelete.Location = new System.Drawing.Point(592, 216);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 16;
@@ -276,7 +276,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(800, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(800, 27);
             this.bindingNavigator1.TabIndex = 18;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -286,13 +286,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -302,7 +302,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -311,7 +311,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -320,13 +320,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -341,7 +341,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -349,7 +349,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -358,13 +358,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // mahasiswaTableAdapter
             // 
@@ -373,7 +373,7 @@
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.LightCoral;
-            this.btnReset.Location = new System.Drawing.Point(686, 62);
+            this.btnReset.Location = new System.Drawing.Point(701, 62);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(87, 23);
             this.btnReset.TabIndex = 19;
@@ -384,7 +384,7 @@
             // btnTestInjection
             // 
             this.btnTestInjection.BackColor = System.Drawing.Color.LightCyan;
-            this.btnTestInjection.Location = new System.Drawing.Point(686, 114);
+            this.btnTestInjection.Location = new System.Drawing.Point(701, 114);
             this.btnTestInjection.Name = "btnTestInjection";
             this.btnTestInjection.Size = new System.Drawing.Size(87, 23);
             this.btnTestInjection.TabIndex = 20;
@@ -395,7 +395,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(461, 293);
+            this.lblTotal.Location = new System.Drawing.Point(279, 296);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(38, 16);
             this.lblTotal.TabIndex = 21;
@@ -403,7 +403,7 @@
             // 
             // btnRekap
             // 
-            this.btnRekap.Location = new System.Drawing.Point(686, 163);
+            this.btnRekap.Location = new System.Drawing.Point(713, 155);
             this.btnRekap.Name = "btnRekap";
             this.btnRekap.Size = new System.Drawing.Size(75, 23);
             this.btnRekap.TabIndex = 22;
