@@ -36,8 +36,8 @@
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.cmbTipe = new System.Windows.Forms.ComboBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.chartProdi = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chartProdi)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpTanggalMasuk
@@ -84,28 +84,28 @@
             this.cmbTipe.Size = new System.Drawing.Size(121, 24);
             this.cmbTipe.TabIndex = 4;
             // 
-            // chart1
+            // chartProdi
             // 
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.chartProdi.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(37, 74);
-            this.chart1.Name = "chart1";
+            this.chartProdi.Legends.Add(legend1);
+            this.chartProdi.Location = new System.Drawing.Point(37, 74);
+            this.chartProdi.Name = "chartProdi";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(728, 333);
-            this.chart1.TabIndex = 5;
-            this.chart1.Text = "chart1";
+            this.chartProdi.Series.Add(series1);
+            this.chartProdi.Size = new System.Drawing.Size(728, 333);
+            this.chartProdi.TabIndex = 5;
+            this.chartProdi.Text = "chart1";
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.chartProdi);
             this.Controls.Add(this.cmbTipe);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnLoad);
@@ -113,7 +113,7 @@
             this.Controls.Add(this.dtpTanggalMasuk);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartProdi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +126,6 @@
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.ComboBox cmbTipe;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartProdi;
     }
 }
