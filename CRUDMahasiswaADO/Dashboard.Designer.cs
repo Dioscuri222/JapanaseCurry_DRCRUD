@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
+            this.cmbTipe = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // dtpTanggalMasuk
@@ -70,11 +71,20 @@
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
             // 
+            // cmbTipe
+            // 
+            this.cmbTipe.FormattingEnabled = true;
+            this.cmbTipe.Location = new System.Drawing.Point(667, 41);
+            this.cmbTipe.Name = "cmbTipe";
+            this.cmbTipe.Size = new System.Drawing.Size(121, 24);
+            this.cmbTipe.TabIndex = 4;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbTipe);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.label1);
@@ -92,5 +102,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.ComboBox cmbTipe;
     }
 }
