@@ -69,7 +69,23 @@ namespace CRUDMahasiswaADO
                 {
                     dt = dbLogic.getAllDataChart();
                 }
+
+                SeriesChartType tipe = (SeriesChartType)cmbTipe.SelectedValue;
+
+                if (tipe == SeriesChartType.Column)
+                {
+                    Series s = new Series("Mahasiswa");
+                    s.ChartType = SeriesChartType.Column;
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        string prodi = row["NamaProdi"].ToString();
+                        int jumlah = Convert.ToInt32(row["JmlhMhs"]);
+                        s.Points.AddXY(prodi, jumlah);
+                    }
+                    chartProdi.Series.Add(s);
+                }
             }
+
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
