@@ -47,7 +47,17 @@ namespace CRUDMahasiswaADO
 
         private void loadDataChart()
         {
+            chartProdi.Series.Clear();
+            chartProdi.Titles.Clear();
+            chartProdi.Legends.Clear();
+            chartProdi.ChartAreas.Clear();
 
+            ChartArea ca = new ChartArea("MainArea");
+            ca.AxisX.Title = "Program Studi";
+            ca.AxisY.Title = "Jumlah Mahasiswa";
+            ca.AxisX.LabelStyle.Angle = -45;
+            ca.BackColor = Color.Transparent;
+            chartProdi.ChartAreas.Add(ca);
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
